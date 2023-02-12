@@ -5,6 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Lobster&family=Manrope:wght@800&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Poppins:wght@100;300;500;800&family=Public+Sans:wght@400;800&family=Red+Hat+Display:wght@500;700;900&display=swap"
+    rel="stylesheet">
 
   <title>Frontend Mentor | Social proof section</title>
 
@@ -24,7 +32,7 @@
 
     <div class="rates-five-stars">
 
-      <div class="reviews">
+      <div class="reviews flex">
         <ul class="rated-stars">
           <li class="star"></li>
           <li class="star"></li>
@@ -35,76 +43,143 @@
         <p class="description-reviews">Rated 5 Stars in Reviews</p>
       </div>
 
-      <div class="report">
+      <div class="report flex">
         <ul class="rated-stars">
-          <li class="stars"></li>
-          <li class="stars"></li>
-          <li class="stars"></li>
-          <li class="stars"></li>
-          <li class="stars"></li>
+          <li class="star"></li>
+          <li class="star"></li>
+          <li class="star"></li>
+          <li class="star"></li>
+          <li class="star"></li>
         </ul>
         <p class="description-report">Rated 5 Stars in Report Guru</p>
       </div>
 
-      <div class="best">
+      <div class="best flex">
         <ul class="rated-stars">
-          <li class="stars"></li>
-          <li class="stars"></li>
-          <li class="stars"></li>
-          <li class="stars"></li>
-          <li class="stars"></li>
+          <li class="star"></li>
+          <li class="star"></li>
+          <li class="star"></li>
+          <li class="star"></li>
+          <li class="star"></li>
         </ul>
         <p class="description-best">Rated 5 Stars in BestTech</p>
       </div>
 
     </div>
 
-    <div class="testimonials-from-users">
-      <div class="card-testimonials">
-        <div class="user">
-          <img src="images/image-colton.jpg" alt="foto do usuario colton">
-          <p class="user-name"> Colton Smith</p>
-          <span class="verified">Verified Buyer</span>
-          <p class="testimonials">
-            "We needed the same printed design as the one we had ordered a week prior.
-            Not only did they find the original order, but we also received it in time.
-            Excellent!
-          </p>
-        </div>
-      </div>
 
-      <div class="testimonials-from-users">
-        <div class="card-testimonials">
-          <div class="user">
-            <img src="images/image-irene.jpg" alt="foto do usuario irene">
+    <div class="testimonials-from-users">
+      <div class="card-testimonials first-card">
+        <div class="user">
+          <img src="images/image-colton.jpg" alt="foto do usuario colton" class="img">
+
+          <div class="user-data">
+            <p class="user-name"> Colton Smith</p>
+            <span class="verified">Verified Buyer</span>
+          </div>
+
+        </div>
+
+        <p class="testimonials">
+          "We needed the same printed design as the one we had ordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent!
+        </p>
+
+      </div> <!-- fim do primeiro card-->
+
+
+      <div class="card-testimonials second-card">
+        <div class="user">
+          <img src="images/image-irene.jpg" alt="foto do usuario colton" class="img">
+
+          <div class="user-data">
             <p class="user-name"> Irene Roberts</p>
             <span class="verified">Verified Buyer</span>
-            <p class="testimonials">
-              "Customer service is always excellent and very quick turn around. Completely
-              delighted with the simplicity of the purchase and the speed of delivery."
-            </p>
           </div>
+
         </div>
 
-        <div class="testimonials-from-users">
-          <div class="card-testimonials">
-            <div class="user">
-              <img src="images/image-anne.jpg" alt="foto do usuario anne">
-              <p class="user-name"> Anne Wallace</p>
-              <span class="verified">Verified Buyer</span>
-              <p class="testimonials">
-                "Put an order with this company and can only praise them for the very high
-                standard. Will definitely use them again and recommend them to everyone!"
-              </p>
-            </div>
+        <p class="testimonials">
+          "Customer service is always excellent and very quick turn around. Completely
+          delighted with the simplicity of the purchase and the speed of delivery."
+        </p>
+
+      </div> <!-- fim do segundo card-->
+
+
+
+
+      <div class="card-testimonials third-card">
+        <div class="user">
+          <img src="images/image-anne.jpg" alt="foto do usuario colton" class="img">
+          <div class="user-data">
+            <p class="user-name"> Anne Wallace</p>
+            <span class="verified">Verified Buyer</span>
+          </div>
+          
+        </div>
+
+        <p class="testimonials">
+          "Put an order with this company and can only praise them for the very high
+          standard. Will definitely use them again and recommend them to everyone!"
+        </p>
+
+      </div> <!-- fim do terceiro card-->
+
+
+
+
+
+
+
+    </div> <!-- fim da div dos 3 cards-->
+
+
+
+
+    <!-- <div class="testimonials-from-users first-card">
+      
+      <div class="card-testimonials ">
+
+        <div class="user">
+          <img src="images/image-colton.jpg" alt="foto do usuario colton" class="img">
+          <p class="user-name"> Colton Smith</p>
+          <span class="verified">Verified Buyer</span>
+        </div>
+        <p class="testimonials">
+          "We needed the same printed design as the one we had ordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent!
+        </p>
+
+      </div> -->
+
+    <!-- <div class="testimonials-from-users second-card">
+        <div class="card-testimonials ">
+
+          <div class="user">
+            <img src="images/image-irene.jpg" alt="foto do usuario irene" class="img">
+            <p class="user-name"> Irene Roberts</p>
+            <span class="verified">Verified Buyer</span>
           </div>
 
-      </div>
+          <p class="testimonials">
+            "Customer service is always excellent and very quick turn around. Completely
+            delighted with the simplicity of the purchase and the speed of delivery."
+          </p>
+        </div> -->
 
-    </div>
+
+
+  </div>
+
+  </div>
+
+  </div>
+  </div>
 
 
 </body>
 
 </html>
-
