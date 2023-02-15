@@ -1,67 +1,66 @@
-body {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(../images/bg-pattern-top-desktop.svg),
-        url(../images/bg-pattern-bottom-desktop.svg);
-    background-repeat: no-repeat;
-    background-position: top left, bottom right;
 }
 
-.container {
+.container .main {
     display: grid;
-    /* grid-template-columns: 555px 555px;
-    grid-template-rows: 1110px 1110px ; */
-
-    grid: "principal avaliacoes" 291px "depoimentos depoimentos" 291px / 555px 555px;
+    grid: "principal avaliacoes"
+        "depoimentos depoimentos";
+    grid-template-columns: minmax(327px, 545px) minmax(327px, 545px);
 }
 
-/*---------------------------------------------------  */
-.container .principal {
-    /* background-color: rgb(245, 228, 208); */
+/* ---------------------------------------------------------------------------------- */
+.container .main .principal {
     grid-area: principal;
-    width: 445px;
+    margin-bottom: 71px;
 }
 
-.container .principal h1 {
+.container .main .principal h1 {
+
+    font-size: 3.5rem;
+    letter-spacing: -0.125rem;
     color: #512051;
-    font-size: 56px;
-    margin-bottom: 16px;
+    max-width: 445px;
+    margin-bottom: 1rem;
 }
 
-.container .principal p {
-    color: #512051;
-    font-size: 19px;
+.container .main .principal p {
+
+    font-size: 1.18rem;
     font-weight: 500;
     line-height: 25px;
+    letter-spacing: -0.63px;
+    max-width: 445px;
+    color: #927B91;
+
 }
 
 
 
-/*---------------------------------------------------  */
-.container .avaliacoes {
+/* ---------------------------------------------------------------------------------- */
+.container .main .avaliacoes {
     grid-area: avaliacoes;
-    /* background-color: coral; */
+
 }
 
 .container .avaliacoes .avaliacao {
     display: flex;
     background-color: #F7F2F7;
-    padding: 18px;
+    padding: 1.125rem;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     border-radius: 8px;
-    width: 445px;
-
+    max-width: 445px;
 }
 
 .container .avaliacoes .avaliacao ul {
     display: flex;
   
 }
-
 .container .avaliacoes ul ::before {
     content: '';
     background-image: url(../images/icon-star.svg);
@@ -69,15 +68,14 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 15px;
-    width: 20px;
+    width: 30px;
     display: inline-block;
 
 }
-
 .container .avaliacoes .avaliacao p {
     color: #512051;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1.06rem;
 }
 
 .container .avaliacoes .avaliacao.report-guru {
@@ -85,25 +83,22 @@ body {
 }
 
 .container .avaliacoes .avaliacao.best-tech {
-    margin-left: 96px;
-
-
+    margin-left: 99px;
 }
 
-/*---------------------------------------------------  */
 
-.container .depoimentos {
+/* ---------------------------------------------------------------------------------- */
+
+.container .main .depoimentos {
     grid-area: depoimentos;
-
     display: flex;
 }
-
 .container .depoimentos .card-depoimento {
     background-color: #512051;
     margin-right: 30px;
     border-radius: 8px;
     max-width: 350px;
-    max-height: 234px;
+    height: 234px;
     padding: 0 32px;
 
 }
@@ -115,12 +110,12 @@ body {
 
 .container .depoimentos .card-depoimento .cliente img {
     border-radius: 50px;
-    width: 40px;
+    max-width: 40px;
     margin: 40px 23px 32px 0;
 }
 
 .container .depoimentos .card-depoimento .cliente .dados-cliente .nome {
-    font-size: 17px;
+    font-size: 1.06rem;
     font-weight: 700;
     color: #fff;
     margin-bottom: 5px;
@@ -128,7 +123,7 @@ body {
 
 .container .depoimentos .card-depoimento .cliente .dados-cliente .verificado {
     color: #EE69A4;
-    font-size: 17px;
+    font-size: 1.06rem;
 }
 
 .container .depoimentos .card-depoimento .cliente .dados-cliente span {
@@ -138,9 +133,9 @@ body {
 .container .depoimentos .card-depoimento .depoimento-cliente {
     color: #fff;
     font-weight: 500px;
-    font-size: 17px;
+    font-size: 1.06rem;
     line-height: 22px;
-    width: 286px;
+    max-width: 286px;
     letter-spacing: -0.3px;
 
 }
@@ -152,9 +147,3 @@ body {
 .container .depoimentos .card-depoimento.anne {
     margin-top: 32px;
 }
-
-
-
-
-
-/*---------------------------------------------------  */

@@ -1,90 +1,57 @@
-@media(max-width:540px){
-    body {
-        background-image: url(../images/bg-pattern-top-mobile.svg),
-            url(../images/bg-pattern-bottom-mobile.svg);
-        background-repeat: no-repeat;
-        background-position: top left, bottom right;
-    }
+@media(max-width:540px) {
 
+    .container {
 
-
-    .container{
-        grid: "principal" 219px
-              "avaliacoes" 219px
-              "depoimentos" 219px / 327px;
-                
-    }
-
-    .container .principal {
-        /* background-color: rgb(245, 228, 208); */
-        width: 327px;
-    }
-
-
-    .container .principal h1 {
+        height: 100%;
+        width: 100%;
+        padding: 24px;
       
-        font-size: 40px;
-        line-height: 32px;
-        text-align: center;
     }
 
-    .container .principal p {
-       width: 327px;
-       margin: 0 24px 0 24px;
-       text-align: center;
-       font-size: 18px;
+
+    .container .main {
+        display: grid;
+        grid: "principal "
+            "avaliacoes"
+            "depoimentos ";
+           
+
+    }
+
+    .container .main .principal h1 {
+
+        font-size: 2.5rem;
+        max-width: 327px;
+        margin-top:50px ;
+    }
+
+    .container .main .principal p {
+        max-width: 327px;
     }
 
     .container .avaliacoes .avaliacao {
-        display: block;
-        padding: 25px;
-        width: 327px;
-
-    
+       flex-direction: column;
+        max-width: 327px;
     }
 
-    .container .avaliacoes .avaliacao ul {
-       
-        justify-content: center;
-      
-    }
-    .container .avaliacoes .avaliacao p {
-        text-align: center;
-    }
     .container .avaliacoes .avaliacao.report-guru {
         margin-left: 0;
     }
-    
+
     .container .avaliacoes .avaliacao.best-tech {
         margin-left: 0;
     }
 
-    .container .depoimentos {
-        margin-top: 80px;
-        display: block;
+    .container .main .depoimentos {
+        flex-direction: column;
+       
+
     }
-    
     .container .depoimentos .card-depoimento {
-        border-radius: 8px;
-        width: 327px;
-        height: 248;
-        padding-bottom: 32px;
-    }
-
-    .container .depoimentos .card-depoimento.irene {
-        margin-top: 30px;
-    }
     
-    .container .depoimentos .card-depoimento.anne {
-        margin-top: 30px;
+    margin-right: 0;
     }
-
-    
-
-
-
+   
 
 
 }
-
-
